@@ -1,6 +1,6 @@
 import { Server } from 'socket.io';
 
-const io = new Server(9000, {
+const io = new Server(process.env.PORT, {
     cors: {
         origin: 'https://whats-app-web.onrender.com',
     }, 
